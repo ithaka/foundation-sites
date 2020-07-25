@@ -101,8 +101,8 @@ $reveal-overlay-background: rgba($black, 0.45) !default;
   $width: $reveal-width,
   $max-width: $reveal-max-width
 ) {
+  @extend %reveal-centered;
   @include breakpoint(medium) {
-    @extend %reveal-centered;
     width: $width;
     max-width: $max-width;
   }
